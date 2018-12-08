@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="servletTest001:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/servletTest001_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="servletTest001/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="servletTest001" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../BaiduNetdiskDownload/ValidateCode.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../BaiduNetdiskDownload/lombok-1.16.20.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../BaiduNetdiskDownload/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../BaiduNetdiskDownload/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../BaiduNetdiskDownload/commons-collections4-4.2-bin/commons-collections4-4.2/commons-collections4-4.2.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

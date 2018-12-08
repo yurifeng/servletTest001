@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formPage</title>
+</head>
+
+<script type="text/javascript">
+    function changeCodeImg() {
+        var codeImg = document.getElementById("codeImg");
+        codeImg.src = "code?number="+Math.random();
+    }
+</script>
+
+<body>
+<h2>User Register</h2>
+<form action="" method="post">
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input type="text" name="username" placeholder="username">
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="password" placeholder="password">
+            </td>
+        </tr>
+        <tr>
+            <td>CheckPwd:</td>
+            <td>
+                <input type="password" name="checkPwd" placeholder="password">
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="email" name="email" placeholder="email">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked="checked">male
+                <input type="radio" name="gender" value="female">female
+            </td>
+        </tr>
+        <tr>
+            <td>Validate:</td>
+            <td>
+                <input type="text" name="validateCode">
+                <img id="codeImg" src="" alt="codeImg" onclick="changeCodeImg()">
+                <a href="javascript:changeCodeImg()">看不清换一张</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
