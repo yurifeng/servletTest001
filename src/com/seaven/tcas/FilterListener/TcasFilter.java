@@ -11,7 +11,7 @@ import java.io.IOException;
  * @PROJECT_NAME servletTest001
  */
 
-@WebFilter(value = "/*")
+//@WebFilter(value = "/*")
 public class TcasFilter implements Filter {
 
     public TcasFilter() {

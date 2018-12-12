@@ -10,7 +10,7 @@ import java.io.IOException;
  * @PACKAGE_NAME ${PACKAGE_NAME}
  * @PROJECT_NAME servletTest001
  */
-@WebFilter("/*")
+//@WebFilter("/*")
 public class Tcas2Filter implements Filter {
     public Tcas2Filter() {
     }

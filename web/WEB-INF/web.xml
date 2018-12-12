@@ -4,6 +4,31 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--全局配置,所有的servlet都能访问-->
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>jsdx001</param-value>
+    </context-param>
+
+
+    <!--监听器配置-->
+    <!-- <listener>
+         <display-name>MainListener</display-name>
+         <listener-class>com.seaven.tcas.listener.MainListener</listener-class>
+     </listener>-->
+
+    <!-- <listener>
+         <listener-class>com.seaven.tcas.listener.AttributeListener</listener-class>
+     </listener>-->
+
+    <!--<listener>
+        <listener-class>com.seaven.tcas.listener.BeanListener</listener-class>
+    </listener>-->
+
+    <listener>
+        <listener-class>com.seaven.tcas.listener.BeanListener2</listener-class>
+    </listener>
+
     <!--    <filter>
             <filter-name>Filter1</filter-name>
             <filter-class>com.seaven.tcas.FilterListener.TcasFilter</filter-class>
@@ -22,13 +47,23 @@
             <url-pattern>/*</url-pattern>
         </filter-mapping>-->
 
-    <filter>
-        <filter-name>NoCacheFilter</filter-name>
-        <filter-class>com.seaven.tcas.FilterListener.NoCacheFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>NoCacheFilter</filter-name>
-        <url-pattern>/ncf</url-pattern>
-    </filter-mapping>
+    <!-- <filter>
+         <filter-name>NoCacheFilter</filter-name>
+         <filter-class>com.seaven.tcas.FilterListener.NoCacheFilter</filter-class>
+     </filter>
+     <filter-mapping>
+         <filter-name>NoCacheFilter</filter-name>
+         <url-pattern>/ncf</url-pattern>
+     </filter-mapping>
+ 
+     <filter>
+         <filter-name>GzipFilter</filter-name>
+         <filter-class>com.seaven.tcas.FilterListener.GzipFilter</filter-class>
+     </filter>
+     <filter-mapping>
+         <filter-name>GzipFilter</filter-name>
+         <url-pattern>/gzip</url-pattern>
+     </filter-mapping>-->
+
 
 </web-app>
